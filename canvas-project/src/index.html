@@ -12,9 +12,25 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
     />
     <title>RxJS Project</title>
+    <style>
+      canvas {
+        width: 90%;
+        height: 300px;
+        border: 1px solid #bbb;
+        border-radius: 5px;
+      }
+    </style>
   </head>
   <body style="padding-top: 3rem">
-    <div class="container"></div>
+    <div class="container">
+      <canvas></canvas>
+      <div class="input-range">
+        <input type="range" min="1" max="5" value="3" id="range" />
+      </div>
+      <div class="color">
+        <input type="color" value="black" id="color" />
+      </div>
+    </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   </body>
